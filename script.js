@@ -63,13 +63,50 @@
 //    alert('Я вас не знаю');
 //}
 
-//result = (a + b < 4) ? "Мало" : "Много";
+// var result = (a + b < 4) ? "Мало" : "Много";
 
 //var message = (login == 'Вася') ? 'Привет' : (login == 'Директор') ? 'Здраствуйте' : (login == '') ? 'нет логина' : '';
 
 
-    
-    
+// if (age>=14&&age<=90)
+
+// if (!(age>=14&&age<=90))
+// if (age<=14||age>=90)
+
+// var a = true;
+// var b = String(a);
+// console.log(typeof(b));
+
+// var str = '9';
+// var num = Number(str);
+// console.log(typeof(num));
+
+// var a = undefined;
+// var b = +a;
+// console.log(b);
+
+// "" + 1 + 0//10
+// "" - 1 + 0//-1
+// true + false//1
+// 6 / "3"//2
+// "2" * "3"//6
+// 4 + 5 + "px"//'9px'
+// "$" + 4 + 5//$45
+// "4" - 2//2
+// "4px" - 2//NaN
+// 7 / 0//Infinity
+// "  -9\n" + 5//-95"
+// "  -9\n" - 5//-14
+// 5 && 2//2
+// 2 && 5//5
+// 5 || 0//5
+// 0 || 5//5
+// null + 1//1
+// undefined + 1//NaN
+// null == "\n0\n"//false
+// +null == +"\n0\n"//true
+
+
     
     
     
