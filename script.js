@@ -106,18 +106,54 @@
 // null == "\n0\n"//false
 // +null == +"\n0\n"//true
 
+// var num = 2;
+// while (num <= 10) {
+//     console.log(num);
+//     num++;
+// }
 
+// var num = 1;
+// do{
+//     console.log(num);
+//     num++
+// } while (num<1);
+
+// for (i=0; i<=10; i++) {
+//     console.log(i);
+// }
+
+// for (var i = 0; i < 10; i++) {
+//
+//     if (!(i % 2 == 0)) {
+//         console.log(i);
+//     }
+// }
     
+// for (i=2; i<=10; i++) {
+//     if (i%2==0) {
+//         console.log(i);
+//     }
+// }
+
+// var i = 0;
+// while (i<3) {
+//     console.log('номер' + i + '!');
+//     i++
+// }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+// var num = prompt('ввести число большее 100', '');
+//
+// while (Number(num)<100&&num!=null) {
+//     var num = prompt('ввести число большее 100', '');
+// }
+
+for (i=2; i<=20; i++) {
+    for (j=1; j<=20;j++) {
+        if (i%j!=0&&i%2!=0&&i%3!=0){
+            console.log(i);
+        }
+    }
+}
     
     
     
