@@ -147,25 +147,89 @@
 //     var num = prompt('ввести число большее 100', '');
 // }
 
-for (i=2; i<=20; i++) {
-    for (j=1; j<=20;j++) {
-        if (i%j!=0&&i%2!=0&&i%3!=0){
-            console.log(i);
-        }
-    }
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+// for (i=2; i<=20; i++) {
+//     for (j=1; j<=20;j++) {
+//         if (i%j!=0&&i%2!=0&&i%3!=0){
+//             console.log(i);
+//         }
+//     }
+// }
 
+// var a = 100;
+// switch (a) {
+//     case 7:
+//         console.log('yes1');
+//         break;
+//     case 99:
+//         console.log('fwerwer');
+//         break;
+//     case 5:
+//         console.log('csasas5');
+//         break;
+//     default:
+//         console.log('===');
+// }
+
+// var brow = prompt('wtat browser you have', '');
+//
+// if (brow=='IE') {
+//     console.log('О, да у вас IE!');
+// }  else if (brow=='Chrome' || brow=='Fir'|| brow=='Saf'|| brow=='Oper') {
+//     console.log('Да, и эти браузеры мы поддерживаем');
+// } else {
+//     console.log('mabe you browser good')
+// }
+
+// var a = +prompt ('a?', '');
+// switch (a) {
+//     case 0:
+//         alert(0);
+//         break;
+//     case 1:
+//         alert(1);
+//         break;
+//     case 2:
+//     case 3:
+//         alert ('2,3');
+//         break;
+// }
+
+// function checkAge(age) {
+//     if (age >18) {
+//         return true;
+//     }
+//     return confirm ('Родители разрешили?');
+// }
+// console.log(checkAge(19));
+
+// function checkAge(age) {
+//    return age >= 18 ? true : confirm('Родители разрешили?');
+// }
+// checkAge(19);
+
+// function checkAge (age) {
+//     return age>18||confirm('Родители разрешили?');
+// }
+// checkAge(12);
+    
+// function min (a, b) {
+//     if (a<b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+// console.log(min(2, 5));
+// console.log(min(3, -1));
+// console.log(min(1, 1));
+//
+    
+function pow (x, n) {
+    var sum = x;
+    for (i=1; i<n; i++){
+        var sum = sum*x;
+    }
+    console.log(sum);
+}
+// pow (3, 3);
+pow (+prompt('one number', ''), +prompt('two number', ''));
