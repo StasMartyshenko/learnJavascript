@@ -224,12 +224,34 @@
 // console.log(min(1, 1));
 //
     
-function pow (x, n) {
-    var sum = x;
-    for (i=1; i<n; i++){
-        var sum = sum*x;
+// function pow (x, n) {
+//     var sum = x;
+//     for (i=1; i<n; i++){
+//         var sum = sum*x;
+//     }
+//     result sum;
+// }
+// // pow (3, 3);
+// pow (+prompt('one number', ''), +prompt('two number', ''));
+
+function pow(x, n) {
+    var result = x;
+
+    for (var i = 1; i < n; i++) {
+        result *= x;
     }
-    console.log(sum);
+
+    return result;
 }
-// pow (3, 3);
-pow (+prompt('one number', ''), +prompt('two number', ''));
+
+var x = prompt("x?", '');
+var n = prompt("n?", '');
+
+if (n <= 1) {
+    alert('Степень ' + n +
+        'не поддерживается, введите целую степень, большую 1'
+    );
+} else {
+    alert( pow(x, n) );
+}
+
