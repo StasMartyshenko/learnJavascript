@@ -234,24 +234,82 @@
 // // pow (3, 3);
 // pow (+prompt('one number', ''), +prompt('two number', ''));
 
+// function pow(x, n) {
+//     var result = x;
+//
+//     for (var i = 1; i < n; i++) {
+//         result *= x;
+//     }
+//
+//     return result;
+// }
+//
+// var x = prompt("x?", '');
+// var n = prompt("n?", '');
+//
+// if (n <= 1) {
+//     alert('Степень ' + n +
+//         'не поддерживается, введите целую степень, большую 1'
+//     );
+// } else {
+//     alert( pow(x, n) );
+// }
+
+// 'use strict'
+// var age = +prompt("Сколько вам лет?", 20);
+//
+// if (age >= 18) {
+//     function sayHi() {
+//         alert( 'Прошу вас!' );
+//     }
+// } else {
+//     function sayHi() {
+//         alert( 'До 18 нельзя' );
+//     }
+// }
+//
+// sayHi();
+
+// var age = prompt('Сколько вам лет?');
+//
+// var sayHi;
+//
+// if (age >= 18) {
+//     sayHi = function() {
+//         alert( 'Прошу Вас!' );
+//     }
+// } else {
+//     sayHi = function() {
+//         alert( 'До 18 нельзя' );
+//     }
+// }
+//
+// sayHi();
+
+//----------------------------------------- Анонимные функции
+// function anonim (quest, yes, no) {
+//     if (confirm (quest)) {
+//         yes();
+//     } else {
+//         no();
+//     }
+// }
+//
+// anonim ('are you agree?', function() {alert('you agree');}, function () {alert('you not agree');})
+
+// ------------------------------------------ new Function
+// var a = new Function ('a, b', 'return a+b');
+//
+// var res = a(1,3);
+// alert (res);
+
 function pow(x, n) {
-    var result = x;
-
-    for (var i = 1; i < n; i++) {
-        result *= x;
+    if (n != 1) { // пока n != 1, сводить вычисление pow(x,n) к pow(x,n-1)
+        return x * pow(x, n - 1);
+    } else {
+        return x;
     }
-
-    return result;
 }
 
-var x = prompt("x?", '');
-var n = prompt("n?", '');
-
-if (n <= 1) {
-    alert('Степень ' + n +
-        'не поддерживается, введите целую степень, большую 1'
-    );
-} else {
-    alert( pow(x, n) );
-}
+alert( pow(2, 3) );
 
