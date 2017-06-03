@@ -303,13 +303,30 @@
 // var res = a(1,3);
 // alert (res);
 
-function pow(x, n) {
-    if (n != 1) { // пока n != 1, сводить вычисление pow(x,n) к pow(x,n-1)
-        return x * pow(x, n - 1);
-    } else {
-        return x;
-    }
-}
+//function pow(x, n) {
+//    if (n != 1) { // пока n != 1, сводить вычисление pow(x,n) к pow(x,n-1)
+//        return x * pow(x, n - 1);
+//    } else {
+//        return x;
+//    }
+//}
+//
+//alert( pow(2, 3) );
 
-alert( pow(2, 3) );
-
+//function showPrimes(n) {
+//
+//  for (var i = 2; i < n; i++) {
+//    if (!isPrime(i)) continue;
+//
+//    console.log(i);  // простое
+//  }
+//}
+//
+//function isPrime(n) {
+//  for (var i = 2; i < n; i++) {
+//    if ( n % i == 0) return false;
+//  }
+//  return true;
+//}
+//
+//showPrimes(20);
