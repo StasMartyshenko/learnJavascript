@@ -327,6 +327,14 @@
 //    if ( n % i == 0) return false;
 //  }
 //  return true;
-//}
+//
 //
 //showPrimes(20);
+
+// var stringNum = 'helloword';
+// console.log(stringNum.length);
+// console.log(stringNum.toUpperCase());
+//
+// var num = 1.5548;
+// console.log(num.toFixed(6));
+
