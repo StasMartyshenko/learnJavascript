@@ -338,3 +338,32 @@
 // var num = 1.5548;
 // console.log(num.toFixed(6));
 
+// function num (a) {
+//     if (!isNaN(parseFloat(a)) && isFinite(a)) {
+//         console.log('ok');
+//     } else {
+//         console.log('not a number')
+//     }
+// }
+//
+// num(+prompt('number', ''));
+
+// var a = +prompt('ввести число', '');
+// var b = +prompt('ввести второе число', '');
+// console.log(a+b);
+
+// console.log(Math.round((0.5+0.2)*100)/100);
+
+// -----------------------------------Как получить дробную часть числа?
+// function getDecimal(num) {
+//     return ((Math.round((num)*100)/100)-(num.toFixed(0)));
+// }
+// alert( getDecimal(12.345) ); // 0.345
+// alert( getDecimal(1.2) ); // 0.2
+// alert( getDecimal(-1.2) ); // 0.2
+
+function random (max) {
+    return (Math.floor(Math.random() * (max - 0)) + 0);
+}
+
+random(5);
