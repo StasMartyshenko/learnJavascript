@@ -362,5 +362,5 @@
 // alert( getDecimal(1.2) ); // 0.2
 // alert( getDecimal(-1.2) ); // 0.2
 
-var str = "Widget with id";
-console.log(str.indexOf('i', 3));
+var str = "Возвращаета";
+console.log(str.localeCompare('Возвращаетб'));
