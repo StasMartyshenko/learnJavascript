@@ -362,8 +362,5 @@
 // alert( getDecimal(1.2) ); // 0.2
 // alert( getDecimal(-1.2) ); // 0.2
 
-function random (max) {
-    return (Math.floor(Math.random() * (max - 0)) + 0);
-}
-
-random(5);
+var str = "Widget with id";
+console.log(str.indexOf('i', 3));
