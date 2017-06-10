@@ -362,5 +362,60 @@
 // alert( getDecimal(1.2) ); // 0.2
 // alert( getDecimal(-1.2) ); // 0.2
 
-var str = "Возвращаета";
-console.log(str.localeCompare('Возвращаетб'));
+// ----------------------------------Сделать первый символ заглавным
+// function ucFirst(str) {
+//     if (str==0) {
+//         return str;
+//     }
+//     return str[0].toUpperCase()+str.slice(1);
+// }
+//
+// console.log(ucFirst("вася")); // "Вася";
+// console.log(ucFirst("")); // "";
+
+//-------------------------------------------------Проверьте спам
+// function checkSpam(str) {
+//     var lower = str.toLowerCase();
+//     var check = lower.indexOf('xxx');
+//     var check2 = lower.indexOf('viagra');
+//         if (check >= 0) {
+//             return true;
+//         } else if (check2 >= 0) {
+//             return true;
+//     }
+//     return false;
+// }
+//
+// console.log(checkSpam('buy ViAgRA now')); // true
+// console.log(checkSpam('free xxxxx')); // true
+// console.log(checkSpam("innocent rabbit")); // false
+
+//------------------------------------------------- Усечение строки
+// function truncate(str, maxlength) {
+//     if (str.length > maxlength) {
+//         return str.slice(0, (maxlength-3)) + '...';
+//     }
+//     return str;
+// }
+//
+// console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20)); //"Вот, что мне хоте..."
+// console.log(truncate("Всем привет!", 20)); // "Всем привет!"
+
+// -------------------------------------------------Выделить число
+// function extractCurrencyValue(str) {
+//     return +str.slice(1);
+// }
+//
+// console.log(extractCurrencyValue('$120'));
+
+// -------------------------------------------------Первый объект
+// var user = {};
+// user.name = 'Vasya';
+// user.surname = 'Petrov';
+// user.name = 'Sergei';
+// delete user.name;
+// console.log(user.surname);
+
+
+
+
