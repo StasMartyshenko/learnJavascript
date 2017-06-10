@@ -416,6 +416,17 @@
 // delete user.name;
 // console.log(user.surname);
 
-
-
-
+// --------------------------------------Определите, пуст ли объект
+// function isEmpty(obj) {
+//     for (dec in obj) {
+//         return false;
+//     }
+//     return true;
+// }
+//
+// var schedule = {};
+//
+// alert(isEmpty(schedule));
+//
+// schedule["8:30"] = "подъём";
+// alert(isEmpty(schedule));
