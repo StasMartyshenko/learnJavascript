@@ -430,3 +430,80 @@
 //
 // schedule["8:30"] = "подъём";
 // alert(isEmpty(schedule));
+
+//--------------------------------------------------Сумма свойств
+// "use strict";
+// var salaries = {
+//     "Вася": 100,
+//     "Петя": 300,
+//     "Даша": 250
+// };
+//
+// var maxSum = 0;
+// for (var sum in salaries) {
+//     maxSum += salaries[sum];
+// }
+//
+// console.log(maxSum);
+
+// ---------------------------------Свойство с наибольшим значением
+// "use strict"
+//
+// var salaries = {
+//     "Вася": 100,
+//     "Петя": 300,
+//     "Даша": 250
+// }
+// var name = '';
+// var sum = '';
+// for (var maxSum in salaries) {
+//     if(salaries[maxSum]>sum) {
+//         name = maxSum;
+//     }
+//     sum = salaries[maxSum];
+// }
+// console.log(name);
+
+// ----------------------------------Умножьте численные свойства на 2
+// var menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu"
+// };
+//
+// function multiplyNumeric (obj) {
+//     for (number in obj) {
+//         if (!isNaN(parseFloat(obj[number])) && isFinite(obj[number])) {
+//             obj[number] = obj[number]*2;
+//         }
+//     }
+// }
+//
+// multiplyNumeric(menu);
+// alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
+//
+// var menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu"
+// };
+//
+// function isNumeric(n) {
+//     return !isNaN(parseFloat(n)) && isFinite(n);
+// }
+//
+// function multiplyNumeric(obj) {
+//     for (var key in obj) {
+//         if (isNumeric(obj[key])) {
+//             obj[key] *= 2;
+//         }
+//     }
+// }
+//
+// multiplyNumeric(menu);
+//
+// alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
+
+
+
+
