@@ -504,6 +504,4 @@
 //
 // alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
 
-
-
-
+// ------------------------------------Добавить новый элемент в массив
