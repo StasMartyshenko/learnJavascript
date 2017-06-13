@@ -504,4 +504,93 @@
 //
 // alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
 
-// ------------------------------------Добавить новый элемент в массив
+// ------------------------------------Получить последний элемент массива
+// var array = ['car', 'bike', 'people', 'world'];
+// console.log(array[array.length - 1]);
+
+// --------------------------------------Добавить новый элемент в массив
+// var array = ['car', 'bike', 'people', 'world'];
+// array[array.length]  ='comp';
+// array.push('computer');
+// console.log(array);
+
+// ----------------------------------------------------Создание массива
+// var styles = ['Джаз', 'Блюз'];
+// styles.push('рок-н-ролл');
+// console.log(styles);
+// styles[styles.length - 2] = 'classic';
+// console.log(styles.shift());
+// styles.unshift('rep', 'reggi');
+// console.log(styles);
+
+// -------------------------------Получить случайное значение из массива
+// var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+//
+// function arrayRandom(random) {
+//     var rand = Math.floor(Math.random() * ((random.length - 1) + 1));
+//     for (var i = 0; i < random.length; i++) {
+//         if (i == rand) {
+//             console.log(random[i]);
+//         }
+//     }
+// }
+// console.log(arrayRandom(arr));
+//
+// var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+// var rand = Math.floor(Math.random() * arr.length);
+// alert( arr[rand] );
+
+// -------------------------Создайте калькулятор для введённых значений
+// var number = [];
+//
+// while (true) {
+//     var userNum = prompt('number', '');
+//     if (userNum === '' || userNum === null || isNaN(userNum)) break;
+//     number.push(+userNum);
+// }
+//
+// var sum = 0;
+// for (i=0; i<number.length; i++) {
+//     sum += number[i];
+// }
+//
+// console.log(sum);
+
+// -----------------------------------------------------Поиск в массиве
+// var arr = ["test", 2, 1.5, false];
+//
+// function find(array, value) {
+//      console.log(array.indexOf(value));
+// }
+//
+// find(arr, "test"); // 0
+// find(arr, 2); // 1
+// find(arr, 1.5); // 2
+// find(arr, 0); // -1
+
+// ----------------------------------------------------Фильтр диапазона
+// var arr = [5, 4, 3, 8, 0];
+//
+// function filterRange(array, a, b) {
+//     var arrFil = [];
+//     for (i=0; i<array.length; i++) {
+//         if (array[i] >= a && array[i] <= b) {
+//             arrFil.push(array[i]);
+//         }
+//     }
+//     return arrFil;
+// }
+// var filtered = filterRange(arr, 3, 5);
+//
+// console.log(filtered);
+// console.log(arr);
+
+// ---------------------------------------------------Решето Эратосфена
+
+
+
+
+
+
+
+
