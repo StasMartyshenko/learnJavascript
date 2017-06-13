@@ -586,7 +586,24 @@
 // console.log(arr);
 
 // ---------------------------------------------------Решето Эратосфена
+var number = [];
 
+function arrUser(n) {
+    for (i=2; i <= n; i++) {
+        number.push(i);
+    }
+    for (j=2; j <= 4; j++) {
+        for (x=2; x<=number.length; x++) {
+            if(x % number[x] != 0) {
+                number.pop(number[x]);
+            }
+        }
+
+    }
+}
+
+arrUser(20);
+console.log(number);
 
 
 
