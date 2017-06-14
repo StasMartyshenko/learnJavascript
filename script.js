@@ -585,29 +585,27 @@
 // console.log(filtered);
 // console.log(arr);
 
-// ---------------------------------------------------Решето Эратосфена
-var number = [];
+// ---------------------------------------------------Решето Эратосфена???
 
-function arrUser(n) {
-    for (i=2; i <= n; i++) {
-        number.push(i);
-    }
-    for (j=2; j <= 4; j++) {
-        for (x=2; x<=number.length; x++) {
-            if(x % number[x] != 0) {
-                number.pop(number[x]);
-            }
-        }
+// ---------------------------------------------Подмассив наибольшей суммы???
 
+var obj = {
+    className: 'open menu'
+}
+
+function addClass(obj, cls) {
+    var a = obj.className.indexOf(cls);
+    console.log(a);
+    if (a!=0) {
+        obj.className = obj.className + ' ' + cls;
+        return obj.className;
     }
 }
 
-arrUser(20);
-console.log(number);
+addClass(obj, 'new'); // obj.className='open menu new'
+addClass(obj, 'open'); // без изменений (класс уже существует)
+addClass(obj, 'me'); // obj.className='open menu new me'
 
-
-
-
-
+alert( obj.className ); // "open menu new me"
 
 
