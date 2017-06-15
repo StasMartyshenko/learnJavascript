@@ -589,23 +589,66 @@
 
 // ---------------------------------------------Подмассив наибольшей суммы???
 
-var obj = {
-    className: 'open menu'
-}
+// -------------------Массивы: методы----------------------------------------
+// ------------------------------------------------Добавить класс в строку???
 
-function addClass(obj, cls) {
-    var a = obj.className.indexOf(cls);
-    console.log(a);
-    if (a!=0) {
-        obj.className = obj.className + ' ' + cls;
-        return obj.className;
-    }
-}
 
-addClass(obj, 'new'); // obj.className='open menu new'
-addClass(obj, 'open'); // без изменений (класс уже существует)
-addClass(obj, 'me'); // obj.className='open menu new me'
+// --------------------Перевести текст вида border-left-width в borderLeftWidth
+// function camelize(str) {
+//     var res = '';
+//     upper = '';
+//     index0 = '';
+//     inrexNext = '';
+//     arr = str.split('-');
+//     for (i=1; i<arr.length; i++) {
+//         upper = arr[i].charAt(0).toUpperCase() + arr[i].substring(1);
+//         inrexNext = inrexNext+upper;
+//     }
+//     index0 = arr[0];
+//     res = index0 + inrexNext;
+//     return res;
+// }
+//
+//
+// console.log(camelize("background-color")); //'backgroundColor';
+// console.log(camelize("list-style-image")); // 'listStyleImage';
+// console.log(camelize("-webkit-transition")); // 'WebkitTransition';
 
-alert( obj.className ); // "open menu new me"
+
+// function camelize(str) {
+//     arr = str.split('-');
+//     for (i=1; i<arr.length; i++) {
+//         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substring(1);
+//
+//     }
+//     return arr.join('');
+// }
+//
+//
+// console.log(camelize("background-color")); //'backgroundColor';
+// console.log(camelize("list-style-image")); // 'listStyleImage';
+// console.log(camelize("-webkit-transition")); // 'WebkitTransition';
+
+// -----------------------------------------------------------Функция removeClass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
