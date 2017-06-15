@@ -630,6 +630,36 @@
 // console.log(camelize("-webkit-transition")); // 'WebkitTransition';
 
 // -----------------------------------------------------------Функция removeClass
+var obj = {
+    className: 'my open menu menu'
+};
+
+function removeClass (obj, cls) {
+    var arr = obj.className.split(' ');
+    for (i=0; i<=arr.length; i++) {
+        if (arr[i] == cls) {
+            arr.splice([i], 1);
+        }
+    }
+    obj.className = arr.join(' ');
+    return obj.className;
+}
+
+console.log(removeClass(obj, 'open')); // obj.className='menu'
+console.log(removeClass(obj, 'blabla')); // без изменений (нет такого класса)
+console.log(removeClass(obj, 'menu'));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
