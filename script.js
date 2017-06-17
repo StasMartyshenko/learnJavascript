@@ -630,24 +630,66 @@
 // console.log(camelize("-webkit-transition")); // 'WebkitTransition';
 
 // -----------------------------------------------------------Функция removeClass
-var obj = {
-    className: 'my open menu menu'
-};
+// var obj = {
+//     className: 'my open menu menu'
+// };
+//
+// function removeClass (obj, cls) {
+//     var arr = obj.className.split(' ');
+//     for (i=0; i<=arr.length; i++) {
+//         if (arr[i] == cls) {
+//             arr.splice([i], 1);
+//             i--;
+//         }
+//     }
+//     obj.className = arr.join(' ');
+//     return obj.className;
+// }
+//
+// console.log(removeClass(obj, 'open')); // obj.className='menu'
+// console.log(removeClass(obj, 'blabla')); // без изменений (нет такого класса)
+// console.log(removeClass(obj, 'menu'));
+// -------------------------------------------------Фильтрация массива "на месте"
+// var arr = [5, 3, 8, 1];
+//
+// function filterRangeInPlace(arr, a, b) {
+//     for (var i = 0; i<arr.length; i++) {
+//         if (arr[i]<a || arr[i]>b) {
+//             arr.splice([i], 1);
+//         }
+//     }
+// }
+//
+// filterRangeInPlace(arr, 1, 4);
+// console.log(arr);
 
-function removeClass (obj, cls) {
-    var arr = obj.className.split(' ');
-    for (i=0; i<=arr.length; i++) {
-        if (arr[i] == cls) {
-            arr.splice([i], 1);
-        }
-    }
-    obj.className = arr.join(' ');
-    return obj.className;
-}
+// ------------------------------------------------Сортировать в обратном порядке
+// var arr = [5, 2, 1, -10, 8];
 
-console.log(removeClass(obj, 'open')); // obj.className='menu'
-console.log(removeClass(obj, 'blabla')); // без изменений (нет такого класса)
-console.log(removeClass(obj, 'menu'));
+// arr.sort().reverse();// как я решил
+//
+// arr.sort(sortArray);
+// function sortArray(a, b) {
+//     return b-a;
+// }
+//
+// console.log(arr);
+
+// --------------------------------------------Скопировать и отсортировать массив
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
