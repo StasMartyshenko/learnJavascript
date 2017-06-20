@@ -693,36 +693,54 @@
 
 // -------------------------------------------Оставить уникальные элементы массива
 
-function unique(arr) {
-    for (i=0; i<arr.length; i++) {
-        for (j = 0;j<arr.length; j++) {
-            if(arr[i] == arr[j]) {
-                arr.arr[j].pop();
-            }
-        }
-    }
-}
+// ------------------------------------------------------Перепишите цикл через map
 
-var strings = ["кришна", "кришна", "харе", "харе",
-    "харе", "харе", "кришна", "кришна", "8-()"
-];
+// var arr = ["Есть", "жизнь", "на", "Марсе"];
+//
+// var arrLength = arr.map(function (name) {
+//     return name.length;
+// });
+//
+// console.log( arrLength ); // 4,5,2,5
 
-alert( unique(strings) ); // кришна, харе, 8-()
+// --------------------------------------------------------Массив частичных сумм
 
+// var arr = [ 1, 2, 3, 4, 5 ];
+// var array =[];
+//
+// var getSum = arr.reduce(function(sum, current) {
+//     array.push(sum);
+//     return sum + current;
+// });
+//
+// array.push(getSum);
+//
+// console.log(array);
 
+// --------------------------------------------------Проверка на аргумент-undefined
+// function f(x) {
+//     alert( arguments.length ? 1 : 0 );
+// }
+//
+// f(undefined);
+// f();
 
-
-
-
-
-
-
-
-
-
-
-
-
+// ----------------------------------------------------------------Сумма аргументов
+// function sum() {
+//     var result = 0;
+//
+//     for (var i = 0; i < arguments.length; i++) {
+//         result += arguments[i];
+//     }
+//
+//     return result;
+// }
+//
+// alert( sum() ); // 0
+// alert( sum(1) ); // 1
+// alert( sum(1, 2) ); // 3
+// alert( sum(1, 2, 3) ); // 6
+// alert( sum(1, 2, 3, 4) ); // 10
 
 
 
