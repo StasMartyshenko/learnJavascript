@@ -742,15 +742,6 @@
 // alert( sum(1, 2, 3) ); // 6
 // alert( sum(1, 2, 3, 4) ); // 10
 
-var today = new Date;
-
-today.setHours(0);
-console.log(( today ));
-
-
-
-console.log(new Date);
-
 
 
 
