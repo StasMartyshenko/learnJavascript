@@ -742,6 +742,65 @@
 // alert( sum(1, 2, 3) ); // 6
 // alert( sum(1, 2, 3, 4) ); // 10
 
+// -----------------------------------------------------------------Создайте дату
+
+// var date = new Date(2012, 1, 20, 3, 12);
+// alert(date);
+
+// -----------------------------------------------------------------Имя дня недели
+// var date = new Date(2012,0,3);  // 3 января 2012
+//
+// function getWeekDay (d) {
+//
+//     var arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+//     var dateNumber = d.getDay();
+//     return arr[dateNumber - 1];
+// }
+//
+// alert( getWeekDay(date) );      // Должно вывести 'вт'
+
+// ---------------------------------------------День недели в европейской нумерации
+
+// function getLocalDay(date) {
+//     var day = date.getDay();
+//     if (day == 0) { // день 0 становится 7
+//         day = 7;
+//     }
+//     return day;
+// }
+// alert( getLocalDay(new Date(2012, 0, 3)) ); // 2
+
+// -------------------------------------------День указанное количество дней назад
+// var date = new Date(2015, 0, 2);
+//
+// function getDateAgo(date, days) {
+//     var copy = new Date(date);
+//     copy.setDate(copy.getDate() - days);
+//     return copy.getDate();
+// }
+//
+//
+// alert( getDateAgo(date, 1) ); // 1, (1 января 2015)
+// alert( getDateAgo(date, 2) ); // 31, (31 декабря 2014)
+// alert( getDateAgo(date, 365) ); // 2, (2 января 2014)
+
+// ----------------------------------------------------------Последний день месяца?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
