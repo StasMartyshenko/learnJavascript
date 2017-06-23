@@ -795,17 +795,50 @@
 // console.log(getLastDayOfMonth(2013, 1));
 
 // ----------------------------------------------Сколько секунд уже прошло сегодня?
-function getSecondsToday() {
-    var now = new Date();
+// function getSecondsToday() {
+//     var now = new Date();
+//
+//     // создать объект из текущей даты, без часов-минут-секунд
+//     var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+//
+//     var diff = now - today; // разница в миллисекундах
+//     return Math.floor(diff / 1000); // перевести в секунды
+// }
+//
+// alert( getSecondsToday() );
 
-    // создать объект из текущей даты, без часов-минут-секунд
-    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+// -----------------------------------------------------Сколько секунд - до завтра?
+// function getSecondsTomorrow() {
+//     var dateNow = new Date();
+//     var dateTomorrov = new Date(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate() + 1);
+//
+//     diff = dateTomorrov - dateNow;
+//     return Math.round(diff / 1000);
+// }
+//
+//
+//
+// console.log(getSecondsTomorrow());
 
-    var diff = now - today; // разница в миллисекундах
-    return Math.floor(diff / 1000); // перевести в секунды
-}
+// --------------------------------------------------Вывести дату в формате дд.мм.гг
 
-alert( getSecondsToday() );
+// ------------------------------------------------Относительное форматирование даты
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
