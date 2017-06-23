@@ -785,6 +785,65 @@
 // alert( getDateAgo(date, 365) ); // 2, (2 января 2014)
 
 // ----------------------------------------------------------Последний день месяца?
+// function getLastDayOfMonth(year, month) {
+//     var d = new Date(year, month +1, 0);
+//     return d.getDate();
+// }
+//
+// console.log(getLastDayOfMonth(2012, 1));
+// console.log(getLastDayOfMonth(2012, 1));
+// console.log(getLastDayOfMonth(2013, 1));
+
+// ----------------------------------------------Сколько секунд уже прошло сегодня?
+function getSecondsToday() {
+    var now = new Date();
+
+    // создать объект из текущей даты, без часов-минут-секунд
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+    var diff = now - today; // разница в миллисекундах
+    return Math.floor(diff / 1000); // перевести в секунды
+}
+
+alert( getSecondsToday() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
