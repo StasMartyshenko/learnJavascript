@@ -831,18 +831,6 @@
 //
 // console.log(arr2);
 
-var phrase = 'Привет';
-
-function sayHi(name) {
-    alert(phrase + ', ' + name);
-}
-
-sayHi('Вася');  // Привет, Вася (*)
-
-phrase = 'Пока';
-
-sayHi('Вася'); // Пока, Вася (**)
-
 
 
 
