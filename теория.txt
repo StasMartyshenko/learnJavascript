@@ -737,10 +737,25 @@ var counter = makeCounter();
 alert( counter() ); // 1
 alert( counter() ); // 2
 
+______________________________________[[Scope]] для new Function________________________________________
+При создании функции с использованием new Function, её свойство [[Scope]] ссылается не на текущий LexicalEnvironment, а на window.
+var a = 1;
+function getFunc() {
+  var a = 2;
+  var func = new Function('', 'alert(a)');
+  return func;
+}
+getFunc()(); // 1, из window
 
+var a = 1;
+function getFunc() {
+  var a = 2;
+  var func = function() { alert(a); };
+  return func;
+}
+getFunc()(); // 2, из LexicalEnvironment функции getFunc
 
-
-
+Получается, что даже если бы мы захотели использовать локальные переменные в new Function, то после сжатия были бы проблемы, так как минификатор переименовывает локальные переменные.
 
 
 
