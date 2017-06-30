@@ -757,9 +757,32 @@ getFunc()(); // 2, из LexicalEnvironment функции getFunc
 
 Получается, что даже если бы мы захотели использовать локальные переменные в new Function, то после сжатия были бы проблемы, так как минификатор переименовывает локальные переменные.
 
+__________________________________Локальные переменные для объекта______________________________________
 
-
-
+Чтобы добавить счётчику возможностей – перейдём с функции на полноценный объект:
+ function makeCounter() {
+  var currentCount = 1;
+  return { // возвратим объект вместо функции
+    getNext: function() {
+      return currentCount++;
+    },
+    set: function(value) {
+      currentCount = value;
+    },
+    reset: function() {
+      currentCount = 1;
+    }
+  };
+}
+var counter = makeCounter();
+alert( counter.getNext() ); // 1
+alert( counter.getNext() ); // 2
+counter.set(5);
+alert( counter.getNext() ); // 5
+Теперь функция makeCounter возвращает не одну функцию, а объект с несколькими методами:
+getNext() – получить следующее значение, то, что раньше делал вызов counter().
+set(value) – поставить значение.
+reset() – обнулить счётчик.
 
 
 
