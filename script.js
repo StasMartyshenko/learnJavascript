@@ -892,17 +892,22 @@
 
 // ---------------------------------------------------------------------Сортировка
 
-var obj = {
-    go: function() { alert(this) }
+//-------------------------------------------------------------Создайте калькулятор
+
+var calculator = {
+    read: function() {
+        calculator.a = +prompt('a', '');
+        calculator.b = +prompt('b', '');
+    },
+    sum: function() {
+        return calculator.a + calculator.b;
+    }
 };
 
-(obj.go)();
-
-
-
-
-
-
+calculator.read();
+alert( calculator.sum() );
+console.log(calculator);
+// alert( calculator.mul() );
 
 
 
