@@ -912,6 +912,75 @@
 // alert( calculator.sum() );
 // alert( calculator.mul() );
 
+// -------------------------------------------Сумма произвольного количества скобок
+// function sum(a) {
+//     var current = a;
+//
+//     function f(b) {
+//         current += b;
+//         return f;
+//     }
+//
+//     f.toString = function() {
+//         return current;
+//     };
+//
+//     return f;
+// }
+//
+// console.log(sum(1)(2));
+// console.log(sum(1)(2)(3));
+// console.log(sum(5)(-1)(2));
+// console.log(sum(6)(-1)(-2)(-3));
+// console.log(sum(0)(1)(2)(3)(4)(5));
+
+// ---------------------------------------Создать Calculator при помощи конструктора
+// function Calculator() {
+//
+//     this.read = function() {
+//         this.a = +prompt('a?', 0);
+//         this.b = +prompt('b?', 0);
+//     };
+//
+//     this.sum = function() {
+//         return this.a + this.b;
+//     };
+//
+//     this.mul = function() {
+//         return this.a * this.b;
+//     };
+// }
+//
+// var calculator = new Calculator();
+// calculator.read();
+//
+// alert( "Сумма=" + calculator.sum() );
+// alert( "Произведение=" + calculator.mul() );
+
+// -------------------------------------Создать Accumulator при помощи конструктора
+// function Accumulator(startingValue) {
+//     this.value = startingValue;
+//
+//     this.read = function() {
+//         this.value += +prompt('Сколько добавлять будем?', 0);
+//     };
+//
+// }
+//
+// var accumulator = new Accumulator(1);
+// accumulator.read();
+// accumulator.read();
+// alert( accumulator.value );
+
+// ------------------------------------------------------------Создайте калькулятор
+
+
+
+
+
+
+
+
 
 
 
