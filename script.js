@@ -1048,6 +1048,45 @@
 
 // ----------------------------------------------------------------Счетчик объектов
 
+// function Article() {
+//     Article.created = new Date();
+//     Article.count++;
+// }
+//
+// Article.count = 0;
+//
+// Article.showStats= function () {
+//     console.log('всего ' + this.count + ' послед ' + this.created);
+// }
+//
+// new Article();
+// new Article();
+//
+// Article.showStats(); // Всего: 2, Последняя: (дата)
+//
+// Article();
+//
+// Article.showStats(); // Всего: 3, Последняя: (дата)
+
+function name() {
+    for (i = 0; i<arguments.length; i++) {
+        console.log(arguments[i]);
+    }
+}
+
+console.log(name.call(this, 'Context'));
+console.log(name.apply('Context'));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
